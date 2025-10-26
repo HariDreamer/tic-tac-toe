@@ -1,0 +1,79 @@
+body {
+  background: linear-gradient(135deg, #f8ff00, #3ad59f);
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
+  color: #222;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.scoreboard {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  font-size: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cell:hover {
+  transform: scale(1.1);
+  background-color: #fffcaa;
+}
+
+#status {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+button {
+  background: #ff4081;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1em;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #e91e63;
+}
+
+.controls {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+.controls select {
+  margin: 0 10px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+}

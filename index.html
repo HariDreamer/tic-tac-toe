@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tic Tac Toe - Crazy Fun Edition</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Tic Tac Toe 🤪🎉</h1>
+    <div class="scoreboard">
+      <!-- 😎 X: <span id="scoreX">0</span> | 😍 O: <span id="scoreO">0</span> -->
+      😎 You: <span id="scoreX">0</span> | 🤖 AI: <span id="scoreO">0</span>
+    </div>
+    <div class="controls">
+      <label
+        >Mode:
+        <select id="modeSelect">
+          <option value="ai">Player vs AI</option>
+          <option value="2p">2 Player</option>
+        </select>
+      </label>
+
+      <label id="difficultyLabel"
+        >Difficulty:
+        <select id="difficultySelect">
+          <option value="easy">Easy</option>
+          <option value="hard" selected>Hard</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="board" id="board"></div>
+    <div id="status">Let's go! 😎 starts first!</div>
+    <button onclick="resetGame()">🔄 Reset Game</button>
+
+    <audio
+      id="clickSound"
+      src="https://www.fesliyanstudios.com/play-mp3/387"
+      preload="auto"
+    ></audio>
+    <audio
+      id="winSound"
+      src="https://www.fesliyanstudios.com/play-mp3/6673"
+      preload="auto"
+    ></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
